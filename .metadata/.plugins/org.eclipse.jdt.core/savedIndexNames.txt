@@ -1,0 +1,25 @@
+INDEX VERSION 1.131+C:\Users\jggup\OneDrive\Documents\Projects\BookStoreProject\.metadata\.plugins\org.eclipse.jdt.core
+3861907171.index
+682946131.index
+4137867205.index
+1865797976.index
+2985071686.index
+4073613473.index
+2517222002.index
+728206763.index
+2628614254.index
+1175286026.index
+3424699606.index
+1684491150.index
+171721760.index
+3278331287.index
+2149891443.index
+2643175468.index
+2667740987.index
+405247610.index
+1514928765.index
+107458515.index
+3959137331.index
+1460085710.index
+3974719065.index
+2359618988.index
