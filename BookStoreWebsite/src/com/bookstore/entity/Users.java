@@ -1,8 +1,12 @@
 package com.bookstore.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
-@Entity
+@Entity 
 public class Users {
 
 	private Integer userId;
@@ -10,6 +14,9 @@ public class Users {
 	private String fullName;
 	private String password;
 
+	@Column(name = "user_id")
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Integer getUserId() {
 		return userId;
 	}
@@ -26,6 +33,7 @@ public class Users {
 		this.email = email;
 	}
 
+	@Column(name="full_name")
 	public String getFullName() {
 		return fullName;
 	}
