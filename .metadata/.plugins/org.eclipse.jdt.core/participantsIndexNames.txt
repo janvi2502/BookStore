@@ -1,3 +1,5 @@
 INDEX VERSION 1.131
 C:\Users\jggup\OneDrive\Documents\Projects\BookStoreProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4146415184.index
 \BookStoreWebsite\src
+C:\Users\jggup\OneDrive\Documents\Projects\BookStoreProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3555644095.index
+\BookStoreWebsite\src

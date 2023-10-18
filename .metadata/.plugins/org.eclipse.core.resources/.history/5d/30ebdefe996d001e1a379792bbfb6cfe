@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 18-Oct-2023, 3:07:27 pm by Hibernate Tools 6.1.5.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="bookstoredb" name="com.bookstoredb.entity2.Book" optimistic-lock="none" table="book">
+        <id name="bookId" type="java.lang.Integer">
+            <column name="book_id"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="com.bookstoredb.entity2.Category" fetch="select" name="category">
+            <column name="category_id" not-null="true"/>
+        </many-to-one>
+        <property name="title" type="string">
+            <column length="128" name="title" not-null="true" unique="true"/>
+        </property>
+        <property name="author" type="string">
+            <column length="64" name="author" not-null="true"/>
+        </property>
+        <property name="description" type="string">
+            <column length="16777215" name="description" not-null="true"/>
+        </property>
+        <property name="isbn" type="string">
+            <column length="15" name="isbn" not-null="true"/>
+        </property>
+        <property name="image" type="binary">
+            <column name="image" not-null="true"/>
+        </property>
+        <property name="price" type="float">
+            <column name="price" not-null="true" precision="12" scale="0"/>
+        </property>
+        <property name="publishDate" type="date">
+            <column length="10" name="publish_date" not-null="true"/>
+        </property>
+        <property name="updatedOn" type="timestamp">
+            <column length="19" name="updated_on" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="reviews" table="review">
+            <key>
+                <column name="book_id" not-null="true"/>
+            </key>
+            <one-to-many class="com.bookstoredb.entity2.Review"/>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="orderDetails" table="order_detail">
+            <key>
+                <column name="book_id"/>
+            </key>
+            <one-to-many class="com.bookstoredb.entity2.OrderDetail"/>
+        </set>
+    </class>
+</hibernate-mapping>

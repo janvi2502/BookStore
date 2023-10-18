@@ -1,0 +1,53 @@
+package com.bookstore.dao;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.bookstore.entity.Users;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+
+public class UserDAOTest {
+
+	private EntityManagerFactory entityManagerFactory;
+	private EntityManager entityManager;
+	private UserDAO userDAO;
+	
+	@BeforeClass
+	public void setupClass() {
+		
+	}
+	
+	@Test
+	public void testCreateUsers() {
+		Users user1 = new Users();
+		user1.setEmail("jaspiii@gmail.com");
+		user1.setFullName("jasperr Gupta");
+		user1.setPassword("mysqltest");
+		
+		user1 = userDAO.create(user1);
+		entityManager.close();
+		entityManagerFactory.close();
+		
+		assertTrue(user1.getUserId() > 0);
+	}
+
+	@Test
+	public void testCreateUsersFieldsNotSet() {
+		Users user1 = new Users();
+	
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("BookStoreWebsite");
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+		UserDAO userDAO = new UserDAO(entityManager);
+		user1 = userDAO.create(user1);
+		entityManager.close();
+		entityManagerFactory.close();
+		
+		assertTrue(user1.getUserId() > 0);
+	}
+	
+}
