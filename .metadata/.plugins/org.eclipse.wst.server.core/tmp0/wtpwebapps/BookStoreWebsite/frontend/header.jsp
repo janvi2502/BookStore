@@ -1,6 +1,6 @@
 <div align="center">
 	<div>
-		<img src="images/kafka.png" />
+		<img src="images/Kafka.png" />
 	</div>
 	
 	<div>

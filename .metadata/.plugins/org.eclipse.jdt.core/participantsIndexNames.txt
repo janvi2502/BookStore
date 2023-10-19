@@ -3,3 +3,5 @@ C:\Users\jggup\OneDrive\Documents\Projects\BookStoreProject\.metadata\.plugins\o
 \BookStoreWebsite\src
 C:\Users\jggup\OneDrive\Documents\Projects\BookStoreProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3555644095.index
 \BookStoreWebsite\src
+C:\Users\jggup\OneDrive\Documents\Projects\BookStoreProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2029521923.index
+\BookStoreWebsite\src
