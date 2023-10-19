@@ -10,6 +10,7 @@ import com.bookstore.entity.Users;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.PersistenceException;
 
@@ -49,7 +50,7 @@ public class UserDAOTest {
 	public void testUpdateUsers(){
 		Users user = new Users();
 		user.setUserId(1);
-		
+
 		user.setEmail("walter@gmail.com");
 		user.setFullName("Walter white");
 		user.setPassword("jesse pinkman");
@@ -57,6 +58,41 @@ public class UserDAOTest {
 		String expected = "jesse pinkman";
 		String actual = user.getPassword();
 		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testGetUsersFound() {
+		Integer userId = 1;
+		Users user = userDAO.get(userId);
+
+		if(user != null) {
+			System.out.println(user.getEmail());
+		}
+		assertNotNull(user);
+	}
+	
+	@Test
+	public void testGetUsersNotFound() {
+		Integer userId= 99;
+		
+		Users user = userDAO.get(userId);
+		
+		assertNull(user);
+	}
+
+	@Test
+	public void testDeleteUsers() {
+		Integer userId = 11;
+		userDAO.delete(userId);
+		Users user = userDAO.get(userId);
+		
+		assertNull(user);
+	}
+	
+	@Test(expected = EntityNotFoundException.class)
+	public void testDeleteNonExsistUsers() {
+		Integer userId = 55;
+		userDAO.delete(userId);
 	}
 	
 	@AfterClass
