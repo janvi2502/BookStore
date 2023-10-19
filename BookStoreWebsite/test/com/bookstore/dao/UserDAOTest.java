@@ -2,6 +2,8 @@ package com.bookstore.dao;
 
 import static org.junit.Assert.*;
 
+import java.util.List;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -94,6 +96,22 @@ public class UserDAOTest {
 		Integer userId = 55;
 		userDAO.delete(userId);
 	}
+	
+	@Test
+	public void testListAll() {
+		List<Users> listUsers = userDAO.listAll();
+		for(Users user: listUsers) {
+			System.out.println(user.getEmail());
+		}
+		assertTrue(listUsers.size() > 0);
+	}
+	
+	@Test
+	public void testCount() {
+		long totalUsers = userDAO.count();
+		assertEquals(16, totalUsers);
+	}
+	
 	
 	@AfterClass
 	public static void tearDownClass() {
