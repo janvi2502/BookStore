@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=BookStoreWebsite/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bookstore.dao{JpaDAO.java[JpaDAO" modifiers="1" timestamp="1697630089752"/>
+    <typeInfo handle="=BookStoreWebsite/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bookstore.dao{JpaDAO.java[JpaDAO" modifiers="1" timestamp="1697715581671"/>
     <typeInfo handle="=BookStoreWebsite/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bookstore.dao{GenericDAO.java[GenericDAO" modifiers="513" timestamp="1697627142771"/>
     <typeInfo handle="=BookStoreWebsite/C:\/Users\/jggup\/.m2\/repository\/net\/bytebuddy\/byte-buddy\/1.12.18\/byte-buddy-1.12.18.jar=/maven.pomderived=/true=/=/test=/true=/=/org.eclipse.jst.component.archivename=/byte-buddy-1.12.18.jar=/=/maven.groupId=/net.bytebuddy=/=/maven.artifactId=/byte-buddy=/=/maven.version=/1.12.18=/=/maven.scope=/runtime=/=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/&lt;net.bytebuddy.description.type(TypeList$Generic.class[Generic" modifiers="1545" timestamp="1693725180175"/>
 </typeInfoHistroy>
