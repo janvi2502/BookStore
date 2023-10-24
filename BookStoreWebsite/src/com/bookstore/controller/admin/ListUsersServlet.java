@@ -1,6 +1,13 @@
 package com.bookstore.controller.admin;
 
 import java.io.IOException;
+
+import java.util.List;
+
+import com.bookstore.entity.Users;
+import com.bookstore.service.UserServices;
+
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -16,13 +23,13 @@ public class ListUsersServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		UserServices userServices = new UserServices();
+		List<Users> listUsers = userServices.listUser();
+		request.setAttribute("listUsers", listUsers);
+		
+		String listPage = "user_list.jsp";
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher(listPage);
+		requestDispatcher.forward(request, response);
 	}
 
 }

@@ -1,0 +1,20 @@
+package com.bookstore.service;
+
+import com.bookstore.dao.UserDAO;
+
+import jakarta.persistence.EntityManagerFactory;
+
+public class UserServices {
+
+	private EntityManagerFactory entityManagerFactory;
+	private UserDAO userDAO;
+	
+	public UserServices() {
+		super();
+	}
+
+	public void listUser() {
+		
+	}
+	
+}
