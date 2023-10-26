@@ -25,7 +25,11 @@
     <fullyQualifiedTypeName name="com.bookstore.dao.UserDAO"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="com.bookstore.service.UserServices"/>
     <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
+    <fullyQualifiedTypeName name="com.bookstore.service.UserServices"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Users"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletException"/>
 </qualifiedTypeNameHistroy>
