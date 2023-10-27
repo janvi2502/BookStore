@@ -112,6 +112,13 @@ public class UserDAOTest {
 		assertEquals(16, totalUsers);
 	}
 	
+	@Test
+	public void testFindByEmail() {
+		String email = "hannibal@cannibal.com";
+		Users user = userDAO.findByEmail(email);
+		
+		assertNotNull(user);
+	}
 	
 	@AfterClass
 	public static void tearDownClass() {
