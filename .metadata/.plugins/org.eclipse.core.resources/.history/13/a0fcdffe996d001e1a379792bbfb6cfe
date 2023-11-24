@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 18-Oct-2023, 3:07:27 pm by Hibernate Tools 6.1.5.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="bookstoredb" name="com.bookstoredb.entity2.BookOrder" optimistic-lock="none" table="book_order">
+        <id name="orderId" type="java.lang.Integer">
+            <column name="order_id"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="com.bookstoredb.entity2.Customer" fetch="select" name="customer">
+            <column name="customer_id" not-null="true"/>
+        </many-to-one>
+        <property name="orderDate" type="timestamp">
+            <column length="19" name="order_date" not-null="true"/>
+        </property>
+        <property name="shippingAddress" type="string">
+            <column length="256" name="shipping_address" not-null="true"/>
+        </property>
+        <property name="recipientName" type="string">
+            <column length="30" name="recipient_name" not-null="true"/>
+        </property>
+        <property name="recipientPhone" type="string">
+            <column length="15" name="recipient_phone" not-null="true"/>
+        </property>
+        <property name="paymentMethod" type="string">
+            <column length="20" name="payment_method" not-null="true"/>
+        </property>
+        <property name="total" type="float">
+            <column name="total" not-null="true" precision="12" scale="0"/>
+        </property>
+        <property name="status" type="string">
+            <column length="20" name="status" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="orderDetails" table="order_detail">
+            <key>
+                <column name="order_id"/>
+            </key>
+            <one-to-many class="com.bookstoredb.entity2.OrderDetail"/>
+        </set>
+    </class>
+</hibernate-mapping>

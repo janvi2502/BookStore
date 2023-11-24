@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 18-Oct-2023, 3:07:27 pm by Hibernate Tools 6.1.5.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="bookstoredb" name="com.bookstoredb.entity2.Category" optimistic-lock="none" table="category">
+        <id name="categoryId" type="java.lang.Integer">
+            <column name="category_id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="name" type="string">
+            <column length="30" name="name" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="books" table="book">
+            <key>
+                <column name="category_id" not-null="true"/>
+            </key>
+            <one-to-many class="com.bookstoredb.entity2.Book"/>
+        </set>
+    </class>
+</hibernate-mapping>
