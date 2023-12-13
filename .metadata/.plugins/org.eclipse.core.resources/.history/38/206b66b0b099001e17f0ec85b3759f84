@@ -73,20 +73,12 @@ public class UserServices {
 		int userId = Integer.parseInt(request.getParameter("id"));
 		Users user = userDAO.get(userId);
 
-		String destPage = "user_form.jsp";
+		String editPage = "user_form.jsp";
+		request.setAttribute("user", user);
 
-		if(user == null) {
-			destPage = "message.jsp";
-			String message = "Could not find user with id " + userId;
-			request.setAttribute("message", message);
-		} else {
 
-			request.setAttribute("user", user);
-
-		}
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher(destPage);
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher(editPage);
 		requestDispatcher.forward(request, response);
-
 	}
 
 	public void updateUser() throws IOException, ServletException {
@@ -101,7 +93,7 @@ public class UserServices {
 		if(userByEmail != null && userByEmail.getUserId() != userById.getUserId()) {
 			String message = "Could not update user. User with email " + email + " already exists.";
 			request.setAttribute("message", message);
-
+			
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher("message.jsp");
 			requestDispatcher.forward(request, response);
 		} else {
@@ -111,25 +103,15 @@ public class UserServices {
 			String message = "User has been updated successfully!";
 			listUser(message);
 		}
+
+
 	}
-
-
 
 	public void deleteUser() throws IOException, ServletException {
 		int userId = Integer.parseInt(request.getParameter("id"));
-		Users user = userDAO.get(userId);
+		userDAO.delete(userId);
 		String message = "User has been successfully deleted!";
-
-		if (user == null) {
-			message = "Could not find user with ID " + userId
-					+ ", or it might have been deleted by another admin";
-			
-			request.setAttribute("message", message);
-		//	request.getRequestDispatcher("message.jsp").forward(request, response);			
-		} else {
-			userDAO.delete(userId);
-			listUser(message);
-		}	
 		
+		listUser(message);
 	}
 }

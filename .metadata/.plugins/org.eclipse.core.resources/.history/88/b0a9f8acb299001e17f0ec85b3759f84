@@ -125,7 +125,7 @@ public class UserServices {
 					+ ", or it might have been deleted by another admin";
 			
 			request.setAttribute("message", message);
-		//	request.getRequestDispatcher("message.jsp").forward(request, response);			
+			request.getRequestDispatcher("message.jsp").forward(request, response);			
 		} else {
 			userDAO.delete(userId);
 			listUser(message);

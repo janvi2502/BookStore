@@ -1,0 +1,13 @@
+127.0.0.1 - - [12/Dec/2023:20:53:16 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:20:53:57 +0530] "GET /BookStoreWebsite/admin HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:20:53:57 +0530] "GET /BookStoreWebsite/admin/ HTTP/1.1" 200 1285
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:20:53:57 +0530] "GET /BookStoreWebsite/images/Kafka2.png HTTP/1.1" 200 10272
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:20:53:57 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:20:54:09 +0530] "GET /BookStoreWebsite/admin/list_users HTTP/1.1" 200 4706
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:20:55:54 +0530] "GET /BookStoreWebsite/admin/list_users HTTP/1.1" 200 4738
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:20:56:42 +0530] "GET /BookStoreWebsite/admin/list_users HTTP/1.1" 200 4750
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:20:57:52 +0530] "GET /BookStoreWebsite/admin/list_users HTTP/1.1" 200 4781
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:21:06:08 +0530] "GET /BookStoreWebsite/admin/list_users HTTP/1.1" 200 4843
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:21:06:16 +0530] "GET /BookStoreWebsite/admin/delete_user?id=3 HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:21:07:32 +0530] "GET /BookStoreWebsite/admin/list_users HTTP/1.1" 200 4843
+0:0:0:0:0:0:0:1 - - [12/Dec/2023:21:08:21 +0530] "GET /BookStoreWebsite/admin/delete_user?id=3 HTTP/1.1" 200 4627

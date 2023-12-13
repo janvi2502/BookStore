@@ -74,19 +74,19 @@ public class UserServices {
 		Users user = userDAO.get(userId);
 
 		String destPage = "user_form.jsp";
-
+		
 		if(user == null) {
-			destPage = "message.jsp";
 			String message = "Could not find user with id " + userId;
 			request.setAttribute("message", message);
 		} else {
 
+			String editPage = "user_form.jsp";
 			request.setAttribute("user", user);
 
-		}
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher(destPage);
-		requestDispatcher.forward(request, response);
 
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher(editPage);
+			requestDispatcher.forward(request, response);
+		}
 	}
 
 	public void updateUser() throws IOException, ServletException {
@@ -117,19 +117,9 @@ public class UserServices {
 
 	public void deleteUser() throws IOException, ServletException {
 		int userId = Integer.parseInt(request.getParameter("id"));
-		Users user = userDAO.get(userId);
+		userDAO.delete(userId);
 		String message = "User has been successfully deleted!";
 
-		if (user == null) {
-			message = "Could not find user with ID " + userId
-					+ ", or it might have been deleted by another admin";
-			
-			request.setAttribute("message", message);
-		//	request.getRequestDispatcher("message.jsp").forward(request, response);			
-		} else {
-			userDAO.delete(userId);
-			listUser(message);
-		}	
-		
+		listUser(message);
 	}
 }
