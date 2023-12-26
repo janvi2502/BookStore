@@ -1,0 +1,18 @@
+package com.bookstore.controller.admin;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+public abstract class BaseServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	private EntityManagerFactory entityManagerFactory;
+	private EntityManager entityManager;
+	
+    public BaseServlet() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

@@ -1,0 +1,19 @@
+package com.bookstore.service;
+
+import com.bookstore.dao.CategoryDAO;
+import com.bookstore.dao.UserDAO;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class CategoryServices {
+
+	private EntityManagerFactory entityManagerFactory;
+	private EntityManager entityManager;
+	private CategoryDAO categoryDAO;
+	private HttpServletRequest request;
+	private HttpServletResponse response;
+	
+}

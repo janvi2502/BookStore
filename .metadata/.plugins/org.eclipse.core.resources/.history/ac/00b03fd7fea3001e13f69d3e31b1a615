@@ -1,0 +1,13 @@
+package com.bookstore.controller.admin;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+public abstract class BaseServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public BaseServlet() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

@@ -1,0 +1,17 @@
+127.0.0.1 - - [26/Dec/2023:16:27:55 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:16:37:40 +0530] "GET /BookStoreWebsite/admin HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:16:37:42 +0530] "GET /BookStoreWebsite/admin/ HTTP/1.1" 200 1302
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:16:37:42 +0530] "GET /BookStoreWebsite/images/Kafka2.png HTTP/1.1" 200 10272
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:16:37:42 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:16:37:45 +0530] "GET /BookStoreWebsite/admin/categories HTTP/1.1" 404 792
+127.0.0.1 - - [26/Dec/2023:16:39:14 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:16:39:22 +0530] "GET /BookStoreWebsite/admin/ HTTP/1.1" 200 1305
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:16:39:25 +0530] "GET /BookStoreWebsite/admin/list_category HTTP/1.1" 404 795
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:16:40:58 +0530] "GET /BookStoreWebsite/admin/ HTTP/1.1" 200 1305
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:16:40:59 +0530] "GET /BookStoreWebsite/admin/list_category HTTP/1.1" 404 795
+127.0.0.1 - - [26/Dec/2023:16:41:11 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:16:41:14 +0530] "GET /BookStoreWebsite/admin/list_category HTTP/1.1" 200 15
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:12:38 +0530] "GET /BookStoreWebsite/images/Kafka2.png HTTP/1.1" 200 10272
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:12:40 +0530] "GET /BookStoreWebsite/admin/ HTTP/1.1" 200 1305
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:13:08 +0530] "GET /BookStoreWebsite/admin/list_category HTTP/1.1" 200 2166
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:21:32 +0530] "GET /BookStoreWebsite/admin/list_category HTTP/1.1" 200 2387
