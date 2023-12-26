@@ -1,0 +1,7 @@
+127.0.0.1 - - [22/Dec/2023:20:55:42 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [22/Dec/2023:20:55:51 +0530] "GET /BookStoreWebsite/admin HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Dec/2023:20:55:52 +0530] "GET /BookStoreWebsite/admin/ HTTP/1.1" 200 1285
+0:0:0:0:0:0:0:1 - - [22/Dec/2023:20:55:52 +0530] "GET /BookStoreWebsite/images/Kafka2.png HTTP/1.1" 200 10272
+0:0:0:0:0:0:0:1 - - [22/Dec/2023:20:55:52 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [22/Dec/2023:20:56:17 +0530] "GET /BookStoreWebsite/admin/list_users HTTP/1.1" 200 4085
+0:0:0:0:0:0:0:1 - - [22/Dec/2023:20:56:42 +0530] "GET /BookStoreWebsite/admin/delete_user?id=27 HTTP/1.1" 200 3862

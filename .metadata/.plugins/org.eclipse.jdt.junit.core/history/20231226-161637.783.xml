@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CategoryDAOTest.testDeleteCategory" project="BookStoreWebsite" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="testDeleteCategory" classname="com.bookstore.dao.CategoryDAOTest" time="0.178"/>
+</testrun>
