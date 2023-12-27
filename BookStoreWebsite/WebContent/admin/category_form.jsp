@@ -5,7 +5,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Create New Category</title>
+<title>
+	<c:if test = "${category != null}">
+		Edit Category
+	</c:if>
+	
+	<c:if test = "${category == null}">
+		Create New Category
+	</c:if>
+</title>
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" />
@@ -25,7 +33,7 @@
 		<c:if test="${category != null}">
 			<form action="update_category" method="post"
 				onsubmit="return validateFormInput()">
-			<input type="hidden" name="userId" value="${category.categoryId}">
+			<input type="hidden" name="categoryId" value="${category.categoryId}">
 		</c:if>
 		<c:if test="${category == null}">
 			<form action="create_category" method="post"
