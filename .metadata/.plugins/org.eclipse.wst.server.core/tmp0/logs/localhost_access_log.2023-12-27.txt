@@ -1,0 +1,11 @@
+127.0.0.1 - - [27/Dec/2023:16:05:36 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [27/Dec/2023:16:05:40 +0530] "GET /BookStoreWebsite/admin HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/Dec/2023:16:05:40 +0530] "GET /BookStoreWebsite/admin/ HTTP/1.1" 200 1305
+0:0:0:0:0:0:0:1 - - [27/Dec/2023:16:05:40 +0530] "GET /BookStoreWebsite/images/Kafka2.png HTTP/1.1" 200 10272
+0:0:0:0:0:0:0:1 - - [27/Dec/2023:16:05:40 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [27/Dec/2023:16:05:59 +0530] "GET /BookStoreWebsite/admin/list_category HTTP/1.1" 200 2387
+0:0:0:0:0:0:0:1 - - [27/Dec/2023:16:08:42 +0530] "GET /BookStoreWebsite/admin/category_form.jsp HTTP/1.1" 200 1968
+0:0:0:0:0:0:0:1 - - [27/Dec/2023:16:10:03 +0530] "GET /BookStoreWebsite/admin/category_form.jsp HTTP/1.1" 200 1592
+0:0:0:0:0:0:0:1 - - [27/Dec/2023:16:10:15 +0530] "GET /BookStoreWebsite/admin/category_form.jsp HTTP/1.1" 200 1587
+0:0:0:0:0:0:0:1 - - [27/Dec/2023:16:10:34 +0530] "GET /BookStoreWebsite/admin/category_form.jsp HTTP/1.1" 200 1596
+0:0:0:0:0:0:0:1 - - [27/Dec/2023:17:32:51 +0530] "GET /BookStoreWebsite/images/Kafka2.png HTTP/1.1" 200 10272

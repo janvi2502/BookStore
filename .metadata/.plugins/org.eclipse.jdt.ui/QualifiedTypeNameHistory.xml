@@ -15,15 +15,11 @@
     <fullyQualifiedTypeName name="org.junit.AfterClass"/>
     <fullyQualifiedTypeName name="jakarta.persistence.PersistenceException"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityNotFoundException"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.NamedQueries"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Query"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.NamedQuery"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManagerFactory"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Persistence"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.UserDAO"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Users"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="jakarta.servlet.ServletException"/>
@@ -32,7 +28,13 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="com.bookstore.service.UserServices"/>
-    <fullyQualifiedTypeName name="com.bookstore.dao.CategoryDAO"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.BaseDAOTest"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.NamedQueries"/>
+    <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.NamedQuery"/>
+    <fullyQualifiedTypeName name="com.bookstore.dao.CategoryDAO"/>
+    <fullyQualifiedTypeName name="com.bookstore.service.CategoryServices"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Category"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.bookstore.controller.admin.BaseServlet"/>
 </qualifiedTypeNameHistroy>

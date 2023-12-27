@@ -15,3 +15,11 @@
 0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:12:40 +0530] "GET /BookStoreWebsite/admin/ HTTP/1.1" 200 1305
 0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:13:08 +0530] "GET /BookStoreWebsite/admin/list_category HTTP/1.1" 200 2166
 0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:21:32 +0530] "GET /BookStoreWebsite/admin/list_category HTTP/1.1" 200 2387
+127.0.0.1 - - [26/Dec/2023:20:53:39 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:53:46 +0530] "GET /BookStoreWebsite/admin/ HTTP/1.1" 200 1305
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:54:22 +0530] "GET /BookStoreWebsite/admin/list_category HTTP/1.1" 200 2387
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:54:29 +0530] "GET /BookStoreWebsite/admin/edit_category?id=5 HTTP/1.1" 404 795
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:54:35 +0530] "GET /BookStoreWebsite/admin/list_users HTTP/1.1" 200 3847
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:54:40 +0530] "GET /BookStoreWebsite/admin/edit_user?id=22 HTTP/1.1" 200 2363
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:54:55 +0530] "GET /BookStoreWebsite/admin/edit_user?id=22 HTTP/1.1" 200 2363
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:20:55:00 +0530] "POST /BookStoreWebsite/admin/update_user HTTP/1.1" 200 3886
