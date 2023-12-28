@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+#heade_rmenu {
+	display:table;
+}

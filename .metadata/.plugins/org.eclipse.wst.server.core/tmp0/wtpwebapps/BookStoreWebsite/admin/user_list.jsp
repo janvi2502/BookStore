@@ -6,18 +6,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Manage Users - Kafka Bookstore Administration</title>
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" />
 	<div align="center">
-		<h2>Users Management</h2>
+		<h2 class="pageheading">Users Management</h2>
 		<h3>
 			<a href="user_form.jsp">Create New User</a>
 		</h3>
 	</div>
 
 	<div align="center">
-		<h4><i>${message}</i></h4>
+		<h4 class="message">${message}</h4>
 	</div>
 
 	<div align="center">

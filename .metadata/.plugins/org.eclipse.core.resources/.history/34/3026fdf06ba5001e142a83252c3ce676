@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#header_menu {
+	display:table;
+}
+
+@menu_item{
+	display:table-cell; 
+	padding-right: 20px;
+}

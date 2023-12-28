@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#header_menu {
+	display:table;
+}
+
+#header_menu div{
+	display:table-cell; 
+	padding-right: 20px;
+}
+
+#menu_img{
+	width: 60px;
+}

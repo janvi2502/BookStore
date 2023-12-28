@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+#header_menu {
+	display:table;
+}
+
+#header_menu div{
+	display:table-cell; 
+	padding-right: 20px;
+}
+
+#menu_img{
+	width: 60px;
+}
+
+a:link{
+	color: cornflowerBlue;
+	text-decoration: none;
+}
+
+a:visited{
+	color: indigo;
+}
+
+a:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+a:active{
+	color: red;
+}
+
+#header_menu a:link{
+	font-size: larger;
+}
+
+.pageheading{
+	color: darkblue;
+}
+
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 8px;
+}
+
+th{
+	background: darkblue;
+	color: cornsilk;
+	font-size: larger;
+}

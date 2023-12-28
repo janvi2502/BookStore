@@ -4,16 +4,39 @@
 	</div>
 
 	<div>
-		Welcome, Admin | <a href="logout">Logout</a>
-		<br/><br/>
+		Welcome, Admin | <a href="logout">Logout</a> <br /> <br />
 	</div>
-	<div>
-		<b> <a href="list_users">Users</a> | 
-			<a href="list_category">Categories</a> | 
-			<a href="books">Books</a> | 
-			<a href="customer">Customers</a> | 
-			<a href="reviews">Reviews</a> | 
-			<a href="orders">Orders</a>
-		</b>
+	<div id="header_menu">
+		<div>
+			<a href="list_users"> 
+				<img id = "menu_img" src="../images/user.png" /><br/> Users
+			</a> 
+		</div>
+		<div>
+			<a href="list_category">
+				<img id = "menu_img" src="../images/list.png" /> <br/> Categories
+			</a> 
+		</div>
+		<div>
+			<a href="books">
+				<img id = "menu_img" src="../images/book.png"/> <br/>Books
+			</a>  
+		</div>
+		<div>		
+			<a href="customer">
+				<img id = "menu_img" src="../images/rating.png" /> <br/> Customers
+			</a>  
+		</div>
+		<div>		
+			<a href="reviews">
+				<img id = "menu_img" src="../images/review.png" /> <br/>Reviews
+			</a> 
+		</div>
+		<div>
+			<a href="orders">
+				<img id = "menu_img" src="../images/order.png" /> <br/>Orders
+			</a>
+		</div>
+
 	</div>
 </div>
