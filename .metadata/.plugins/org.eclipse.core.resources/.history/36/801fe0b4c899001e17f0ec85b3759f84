@@ -1,0 +1,11 @@
+package com.bookstore.dao;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+
+public class BaseDAOTest {
+
+	private static EntityManagerFactory entityManagerFactory;
+	private static EntityManager entityManager;
+	
+}

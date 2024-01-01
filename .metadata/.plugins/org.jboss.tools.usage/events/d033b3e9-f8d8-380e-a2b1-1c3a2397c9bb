@@ -1,11 +1,11 @@
-#Thu Dec 28 15:48:55 IST 2023
+#Mon Jan 01 12:22:21 IST 2024
 a=finishWizard
 c=0
 cl=org.eclipse.wst.css.ui.internal.wizard.NewCSSWizard
 cmp=usage
 ct=jbt
-d=1703758735536
+d=1704091941743
 l=Wizard class name
-s=1
+s=0
 v=2.2.500
 vl=How many times the 'Finish' button pressed during the day
